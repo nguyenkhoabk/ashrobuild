@@ -1,0 +1,150 @@
+<?php
+/**
+ * Homepage Features
+ *
+ * @since 4.6.2
+ */
+
+/**
+ * Features Section Title and Description.
+ */
+$features_section_title	= get_option( 'inspiry_features_section_title' );
+$features_section_desc 	= get_option( 'inspiry_features_section_desc' );
+
+/**
+ * First Feature Details
+ */
+$feature_image_first		= get_option( 'inspiry_first_feature_image' );
+$feature_title_first		= get_option( 'inspiry_first_feature_title' );
+$feature_desc_first			= get_option( 'inspiry_first_feature_desc' );
+
+/**
+ * Second Feature Details
+ */
+$feature_image_second		= get_option( 'inspiry_second_feature_image' );
+$feature_title_second		= get_option( 'inspiry_second_feature_title' );
+$feature_desc_second		= get_option( 'inspiry_second_feature_desc' );
+
+/**
+ * Third Feature Details
+ */
+$feature_image_third		= get_option( 'inspiry_third_feature_image' );
+$feature_title_third		= get_option( 'inspiry_third_feature_title' );
+$feature_desc_third			= get_option( 'inspiry_third_feature_desc' );
+
+?>
+
+<section class="home-features-section">
+
+	<div class="headings">
+
+		<?php
+			if ( ! empty( $features_section_title ) ) {
+				echo '<h2 id="features-title">' . esc_html( $features_section_title ) . '</h2>';
+			}
+		?>
+		<?php
+			if ( ! empty( $features_section_desc ) ) {
+				echo '<p id="features-desc">' . esc_html( $features_section_desc ) . '</p>';
+			}
+		?>
+
+	</div>
+	<!-- /.headings -->
+
+	<div class="features-wrapper clearfix">
+
+		<?php if ( ! empty( $feature_image_first ) || ! empty( $feature_title_first ) || ! empty( $feature_desc_first ) ) : ?>
+
+			<div class="span3 features-single">
+
+				<?php if ( ! empty( $feature_image_first ) ) :  ?>
+					<div class="feature-img">
+						<img src="<?php echo $feature_image_first; ?>" alt="" />
+					</div>
+					<!-- /.feature-img -->
+				<?php endif; ?>
+
+				<div class="feature-content">
+					<?php
+						if ( ! empty( $feature_title_first ) ) {
+							echo '<h4>' . esc_html( $feature_title_first ) . '</h4>';
+						}
+					?>
+					<?php
+						if ( ! empty( $feature_desc_first ) ) {
+							echo '<p>' . esc_html( $feature_desc_first ) . '</p>';
+						}
+					?>
+				</div>
+				<!-- /.feature-content -->
+
+			</div>
+			<!-- /.features-single -->
+
+		<?php endif; ?>
+
+		<?php if ( ! empty( $feature_image_second ) || ! empty( $feature_title_second ) || ! empty( $feature_desc_second ) ) : ?>
+
+			<div class="span3 features-single">
+
+				<?php if ( ! empty( $feature_image_second ) ) :  ?>
+					<div class="feature-img">
+						<img src="<?php echo $feature_image_second; ?>" alt="" />
+					</div>
+					<!-- /.feature-img -->
+				<?php endif; ?>
+
+				<div class="feature-content">
+					<?php
+						if ( ! empty( $feature_title_second ) ) {
+							echo '<h4>' . esc_html( $feature_title_second ) . '</h4>';
+						}
+					?>
+					<?php
+						if ( ! empty( $feature_desc_second ) ) {
+							echo '<p>' . esc_html( $feature_desc_second ) . '</p>';
+						}
+					?>
+				</div>
+				<!-- /.feature-content -->
+
+			</div>
+			<!-- /.features-single -->
+
+		<?php endif; ?>
+
+		<?php if ( ! empty( $feature_image_third ) || ! empty( $feature_title_third ) || ! empty( $feature_desc_third ) ) : ?>
+
+			<div class="span3 features-single">
+
+				<?php if ( ! empty( $feature_image_third ) ) :  ?>
+					<div class="feature-img">
+						<img src="<?php echo $feature_image_third; ?>" alt="" />
+					</div>
+				<?php endif; ?>
+				<!-- /.feature-img -->
+				<div class="feature-content">
+					<?php
+						if ( ! empty( $feature_title_third ) ) {
+							echo '<h4>' . esc_html( $feature_title_third ) . '</h4>';
+						}
+					?>
+					<?php
+						if ( ! empty( $feature_desc_third ) ) {
+							echo '<p>' . esc_html( $feature_desc_third ) . '</p>';
+						}
+					?>
+				</div>
+				<!-- /.feature-content -->
+
+			</div>
+			<!-- /.features-single -->
+
+		<?php endif; ?>
+
+	</div>
+	<!-- /.features-wrapper -->
+
+</section>
+<!-- /.home-features-section -->

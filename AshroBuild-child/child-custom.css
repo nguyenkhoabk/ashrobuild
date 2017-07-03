@@ -1,0 +1,123 @@
+/* Child Theme - Custom CSS File for Buyers to Modify */
+
+
+.advance-search .option-bar.large{
+	width: 95%;
+	max-width: 534px;
+}
+.selectwrap{
+	margin-bottom: 9px;
+}
+.selectwrap input{
+    margin-bottom: 3px;
+}
+.select2-container .select2-search--inline .select2-search__field{
+    margin-top: 5px;
+}
+.select2-container .select2-selection{
+	padding: 0; 
+}
+.select2-container .select2-selection,
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+	border: none;
+}
+.select2-container--default .select2-selection--single{
+    border: 1px solid #cdcdcd;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    border: 1px solid #cdcdcd;
+    min-height: 34px;
+    height: auto;
+}
+
+
+
+/* Disable WhatsApp button on Desktop */
+@media screen and (min-width: 1024px) {
+    .social-media-whatsapp {
+    display: none !important;
+    }
+}
+ 
+.social-media-link {
+    padding: 2px 8px 4px 8px !important;
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    margin-top: 2px;
+    display: inline-block;
+    text-decoration: none;
+}
+ 
+.social-media-link:hover,.social-media-link:active {
+    color: white;
+}
+ 
+.social-media-twitter {
+    background: #00aced;
+}
+ 
+.social-media-twitter:hover,.social-media-twitter:active {
+    background: #0084b4;
+}
+ 
+.social-media-facebook {
+    background: #3B5997;
+}
+ 
+.social-media-facebook:hover,.social-media-facebook:active {
+    background: #2d4372;
+}
+ 
+.social-media-googleplus {
+    background: #D64937;
+}
+ 
+.social-media-googleplus:hover,.social-media-googleplus:active {
+    background: #b53525;
+}
+ 
+.social-media-buffer {
+    background: #444;
+}
+ 
+.social-media-buffer:hover,.social-media-buffer:active {
+    background: #222;
+}
+ 
+.social-media-pinterest {
+    background: #bd081c;
+}
+ 
+.social-media-pinterest:hover,.social-media-pinterest:active {
+    background: #bd081c;
+}
+ 
+.social-media-linkedin {
+    background: #0074A1;
+}
+ 
+.social-media-linkedin:hover,.social-media-linkedin:active {
+    background: #006288;
+}
+ 
+.social-media-whatsapp {
+    background: #43d854;
+}
+ 
+.social-media-whatsapp:hover,.social-media-whatsapp:active {
+    background: #009688;
+}
+ 
+.social-media-social {
+    margin: 20px 0px 25px 0px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+}
